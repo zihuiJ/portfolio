@@ -130,8 +130,8 @@ const Hero = () => {
     </svg>
   );
   return (
-    <div className="flex flex-row items-center justify-between mx-80 h-dvh">
-      <div className="flex flex-col justify-between w-1/2 gap-8 z-30">
+    <div className="flex flex-row items-center justify-between md:mx-40 lg:mx-60 mx-20 h-dvh min-w-[1000px] relative">
+      <div className="flex flex-col justify-between md:w-[800px] w-[600px] gap-8 z-30">
         <h1 className="heading">Front-end Developer</h1>
         <p className="paragraph">Hi, I'm Jess.</p>
         <p className="paragraph">

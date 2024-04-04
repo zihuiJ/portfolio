@@ -27,15 +27,15 @@ module.exports = {
           "100%": { top: "200px", right: "-50x", transform: "scale(1)" },
         },
         purple: {
-          "0%": { top: "80px", right: "30px", transform: "scale(1.2)" },
-          "30%": { top: "300px", right: "30px", transform: "scale(1)" },
-          "60%": { top: "200px", right: "150px", transform: "scale(1)" },
-          "100%": { top: "80px", right: "30px", transform: "scale(1.2)" },
+          "0%": { top: "80px", right: "-20px", transform: "scale(1.2)" },
+          "30%": { top: "300px", right: "-20px", transform: "scale(1)" },
+          "60%": { top: "200px", right: "100px", transform: "scale(1)" },
+          "100%": { top: "80px", right: "-20px", transform: "scale(1.2)" },
         },
         green: {
           "0%": { top: "250px", right: "40px", transform: "scale(1)" },
-          "30%": { top: "150px", right: "200px", transform: "scale(1.4)" },
-          "60%": { top: "250px", right: "150px", transform: "scale(1)" },
+          "30%": { top: "150px", right: "150px", transform: "scale(1.4)" },
+          "60%": { top: "250px", right: "100px", transform: "scale(1)" },
           "100%": { top: "250px", right: "40px", transform: "scale(1)" },
         },
         blink: {
