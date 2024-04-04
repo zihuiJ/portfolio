@@ -38,6 +38,10 @@ module.exports = {
           "60%": { top: "250px", right: "150px", transform: "scale(1)" },
           "100%": { top: "250px", right: "40px", transform: "scale(1)" },
         },
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
       },
       // animation: {
       //   blue: "blue 8s infinite ease",

@@ -131,11 +131,14 @@ const Hero = () => {
   );
   return (
     <div className="flex flex-row items-center justify-between mx-80 h-dvh">
-      <div className="flex flex-col justify-between w-1/3 gap-8 z-30">
+      <div className="flex flex-col justify-between w-1/2 gap-8 z-30">
         <h1 className="heading">Front-end Developer</h1>
+        <p className="paragraph">Hi, I'm Jess.</p>
         <p className="paragraph">
-          Hello, I am Jess Jiang. A passionate Front-end React Developer based
-          in Toronto, Canada.
+          I'm a front-end developer, currently based in Toronto. I studied
+          Statisics in my undergrad, but now I work with code. I'm passionate
+          about Coding, Web Design, and books
+          <span className="animate-[blink_1s_infinite]">|</span>
         </p>
         <div className="flex flex-row space-x-12">
           <Link href="/about">
