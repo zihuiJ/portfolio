@@ -9,9 +9,9 @@ import { MdEmail } from "react-icons/md";
 const Navbar = () => {
   return (
     <div className="flex p-6 justify-between">
-      <div className="flex flex-row space-x-12 paragraph">
+      <div className="flex flex-row space-x-4 md:space-x-12 paragraph">
         <div>2024</div>
-        <span>
+        <span className="shrink-0">
           <Link href="/">Jess Jiang</Link>
         </span>
       </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
           link="mailto: z253jian@uwaterloo.ca"
         />
       </div>
-      <div className="flex gap-x-12">
+      <div className="flex space-x-4 md:space-x-12">
         <NavLink link="/about" name="about" />
         <NavLink link="/projects" name="projects" />
       </div>

@@ -130,14 +130,23 @@ const Hero = () => {
     </svg>
   );
   return (
-    <div className="flex flex-row items-center justify-between md:mx-40 lg:mx-60 mx-20 h-dvh min-w-[1000px] relative">
-      <div className="flex flex-col justify-between md:w-[800px] w-[600px] gap-8 z-30">
-        <h1 className="heading">Front-end Developer</h1>
-        <p className="paragraph">Hi, I'm Jess.</p>
+    <div className="flex flex-row items-center mx-10 h-dvh min-w-[600px] relative">
+      <div className="flex flex-col md:w-[800px] w-[400px] gap-8 z-30 sm:ml-20 md:ml-40">
+        <div className="flex flex-row space-x-6 items-center">
+          <h1 className="heading w-[350px]">Front-end Developer</h1>
+          <div className="rounded-full overflow-hidden border-2 w-[250px] h-[250px] shrink-0 justify-self-start">
+            <img
+              src="assets/picture1.jpg"
+              alt="a picture of me"
+              className="object-cover w-full h-full"
+            />
+          </div>
+        </div>
+        <p className="paragraph">Hi there, this is Jess:)&#x1F90D;</p>
         <p className="paragraph">
           I'm a front-end developer, currently based in Toronto. I studied
           Statisics in my undergrad, but now I work with code. I'm passionate
-          about Coding, Web Design, and books
+          about Coding, UX Design, and books
           <span className="animate-[blink_1s_infinite]">|</span>
         </p>
         <div className="flex flex-row space-x-12">
@@ -149,14 +158,15 @@ const Hero = () => {
           </Link>
         </div>
       </div>
+      {/* animated colour mesh */}
       <div>
-        <div className="z-0 absolute top-[50px] right-0 animate-[blue_8s_infinite_ease]">
+        <div className="z-0 absolute top-[50px] right-0 animate-[blue_6s_infinite_ease]">
           {Blue}
         </div>
-        <div className="z-20 absolute top-[80px] right-[-20px] animate-[purple_8s_infinite_ease]">
+        <div className="z-20 absolute top-[80px] right-[-20px] animate-[purple_6s_infinite_ease]">
           {Purple}
         </div>
-        <div className="z-10 absolute top-[300px] right-[40px] animate-[green_8s_infinite_linear]">
+        <div className="z-10 absolute top-[300px] right-[40px] animate-[green_6s_infinite_linear]">
           {Green}
         </div>
       </div>
