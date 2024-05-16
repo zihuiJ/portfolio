@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import heroButton from "./ui/heroButton";
 import Link from "next/link";
@@ -129,6 +131,22 @@ const Hero = () => {
       </defs>
     </svg>
   );
+  // scroller function
+  const scroll2El = (elID) => {
+    window.scrollTo({
+      top: document.getElementById(elID).offsetTop - 60,
+      behavior: "smooth",
+    });
+  };
+
+  const onBtnClick = (e) => {
+    e.preventDefault();
+    const goto = e.target.getAttribute("goto");
+    setTimeout(() => {
+      scroll2El(goto);
+    }, 100);
+  };
+
   return (
     <div className="flex flex-row items-center mx-10 h-dvh min-w-[600px] relative">
       <div className="flex flex-col md:w-[800px] w-[400px] gap-8 z-30 sm:ml-20 md:ml-40">
@@ -150,23 +168,25 @@ const Hero = () => {
           <span className="animate-[blink_1s_infinite]">|</span>
         </p>
         <div className="flex flex-row space-x-12">
-          <Link href="/about">
-            <button className="paragraph btn-primary">About me</button>
-          </Link>
-          <Link href="/projects">
-            <button className="paragraph btn-outline">Projects</button>
-          </Link>
+          <button
+            goto="about"
+            onClick={onBtnClick}
+            className="paragraph btn-primary"
+          >
+            About me
+          </button>
+            <button goto="projects" onClick={onBtnClick} className="paragraph btn-outline">Projects</button>
         </div>
       </div>
       {/* animated colour mesh */}
       <div>
-        <div className="z-0 absolute top-[50px] right-0 animate-[blue_6s_infinite_ease]">
+        <div className="z-0 fixed top-[50px] right-0 animate-[blue_6s_infinite_ease]">
           {Blue}
         </div>
-        <div className="z-20 absolute top-[80px] right-[-20px] animate-[purple_6s_infinite_ease]">
+        <div className="z-20 fixed top-[80px] right-[-20px] animate-[purple_6s_infinite_ease]">
           {Purple}
         </div>
-        <div className="z-10 absolute top-[300px] right-[40px] animate-[green_6s_infinite_linear]">
+        <div className="z-10 fixed top-[300px] right-[40px] animate-[green_6s_infinite_linear]">
           {Green}
         </div>
       </div>
